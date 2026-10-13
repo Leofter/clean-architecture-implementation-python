@@ -6,7 +6,7 @@ class MemoryPedidoRepository(IPedidoGateway):
     def __init__(self, database: MemoryDatase):
         self.database = database
 
-    def salvar(self, pedido: Pedido):
+    def salvar(self, pedido: Pedido) -> None:
         self.database.pedidos.append(pedido)
 
     def listar(self) -> list[Pedido]:
