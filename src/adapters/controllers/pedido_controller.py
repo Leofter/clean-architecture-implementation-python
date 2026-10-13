@@ -17,6 +17,6 @@ class PedidoController:
         return self.presenter.apresentar(output_dto)
 
     def listar_pedido(self):
-        output_dtos = self.criar_pedido_use_case.lista_pedido()
+        output_dtos = self.criar_pedido_use_case.listar_pedido()
 
         return self.presenter.apresentar_lista(output_dtos)
